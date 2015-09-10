@@ -14,6 +14,8 @@
 		F3732D161BA212F20095C518 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3732D151BA212F20095C518 /* Images.xcassets */; };
 		F3732D191BA212F20095C518 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3732D171BA212F20095C518 /* LaunchScreen.xib */; };
 		F3732D251BA212F20095C518 /* SpriteWalkthroughTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F3732D241BA212F20095C518 /* SpriteWalkthroughTests.m */; };
+		F3732D2F1BA214490095C518 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3732D2E1BA214490095C518 /* SpriteKit.framework */; };
+		F3732D321BA2156D0095C518 /* HelloScene.m in Sources */ = {isa = PBXBuildFile; fileRef = F3732D311BA2156D0095C518 /* HelloScene.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		F3732D1E1BA212F20095C518 /* SpriteWalkthroughTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpriteWalkthroughTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3732D231BA212F20095C518 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3732D241BA212F20095C518 /* SpriteWalkthroughTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpriteWalkthroughTests.m; sourceTree = "<group>"; };
+		F3732D2E1BA214490095C518 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		F3732D301BA2156D0095C518 /* HelloScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloScene.h; sourceTree = "<group>"; };
+		F3732D311BA2156D0095C518 /* HelloScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelloScene.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3732D2F1BA214490095C518 /* SpriteKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +72,7 @@
 				F3732D071BA212F20095C518 /* SpriteWalkthrough */,
 				F3732D211BA212F20095C518 /* SpriteWalkthroughTests */,
 				F3732D061BA212F20095C518 /* Products */,
+				F3732D2E1BA214490095C518 /* SpriteKit.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,11 +88,13 @@
 		F3732D071BA212F20095C518 /* SpriteWalkthrough */ = {
 			isa = PBXGroup;
 			children = (
+				F3732D121BA212F20095C518 /* Main.storyboard */,
 				F3732D0C1BA212F20095C518 /* AppDelegate.h */,
 				F3732D0D1BA212F20095C518 /* AppDelegate.m */,
 				F3732D0F1BA212F20095C518 /* ViewController.h */,
 				F3732D101BA212F20095C518 /* ViewController.m */,
-				F3732D121BA212F20095C518 /* Main.storyboard */,
+				F3732D301BA2156D0095C518 /* HelloScene.h */,
+				F3732D311BA2156D0095C518 /* HelloScene.m */,
 				F3732D151BA212F20095C518 /* Images.xcassets */,
 				F3732D171BA212F20095C518 /* LaunchScreen.xib */,
 				F3732D081BA212F20095C518 /* Supporting Files */,
@@ -220,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3732D111BA212F20095C518 /* ViewController.m in Sources */,
+				F3732D321BA2156D0095C518 /* HelloScene.m in Sources */,
 				F3732D0E1BA212F20095C518 /* AppDelegate.m in Sources */,
 				F3732D0B1BA212F20095C518 /* main.m in Sources */,
 			);
@@ -350,6 +360,7 @@
 				INFOPLIST_FILE = SpriteWalkthrough/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -360,6 +371,7 @@
 				INFOPLIST_FILE = SpriteWalkthrough/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
